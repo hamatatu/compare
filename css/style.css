@@ -39,6 +39,9 @@ img {
   margin: 0 auto;
 }
 
+/**
+  画像ドラッグ時の選択状態回避 START
+**/
 .comparison-block::-moz-selection {
   background-color: transparent;
 }
@@ -62,6 +65,9 @@ img {
 .comparison-block *::-moz-selection {
   background-color: transparent;
 }
+/**
+  画像ドラッグ時の選択状態回避 END
+**/
 
 .comparison-before-img {
   position: absolute;
@@ -69,6 +75,7 @@ img {
   left: 0;
   overflow: hidden;
   z-index: 5;
+  animation: slide-img 2s ease-in-out forwards;
 }
 
 .comparison-after-img {
@@ -103,3 +110,48 @@ img {
   margin-top: -15px;
   left: -14px;
 }
+
+.comparison-arrow.inview {
+  animation: slide 2s ease-in-out forwards;
+}
+
+.compare-left {
+  position: absolute;
+    bottom: 32.3%;
+    width: 12%;
+    z-index: 5;
+    left: 30%;
+}
+
+.compare-right {
+  position: absolute;
+  right: 30%;
+  bottom: 32.3%;
+  width: 12%;
+  z-index: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.empty {
+  margin-bottom: 1000px;
+}
+
+
