@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body,
+div,
+p,
+h1,
+h2,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.comparison-block {
+  width: 100%;
+  max-width: 640px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.comparison-block::-moz-selection {
+  background-color: transparent;
+}
+
+.comparison-block::selection {
+  background-color: transparent;
+}
+
+.comparison-block::-moz-selection {
+  background-color: transparent;
+}
+
+.comparison-block *::-moz-selection {
+  background-color: transparent;
+}
+
+.comparison-block *::selection {
+  background-color: transparent;
+}
+
+.comparison-block *::-moz-selection {
+  background-color: transparent;
+}
+
+.comparison-before-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.comparison-after-img {
+  position: relative;
+  z-index: 1;
+}
+
+.comparison-after-img img {
+  width: 100%;
+}
+
+.comparison-arrow {
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.comparison-arrow:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: -14px;
+}
