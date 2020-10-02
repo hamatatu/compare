@@ -11,14 +11,30 @@ li {
   margin: 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 750px;
   margin: 0 auto;
 }
 
+.compare {
+  position: relative;
+}
+
+.compare-content {
+  position: absolute;
+  width: 87%;
+  bottom: 7%;
+  left: 6.4%;
+}
+
 .comparison-block {
   width: 100%;
-  max-width: 640px;
+  max-width: 750px;
   position: relative;
   margin: 0 auto;
 }
