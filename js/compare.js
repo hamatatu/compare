@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   /* IntersectionObserverに渡すコールバック関数 */
   var options = {
-    rootMargin: "-10px 0px"
+    rootMargin: "-10px 0px -300px 0px"
   }
 
   /* IntersectionObserver初期化 */
